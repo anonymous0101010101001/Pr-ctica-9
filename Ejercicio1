@@ -1,0 +1,11 @@
+
+const tieneLongitudValida = (password) => password.length >= 8;
+
+function registrarUsuario(usuario, password) {
+    return tieneLongitudValida(password)
+        ? `Registro exitoso para ${usuario}`
+        : "Error: La contraseña es demasiado corta";
+}
+
+console.log(registrarUsuario("Carlos", "1234"));
+console.log(registrarUsuario("Maria", "Clave2026"));
